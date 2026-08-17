@@ -1,4 +1,4 @@
-class Mosaic < Formula
+class Ocean < Formula
   desc "Shared, continuously synced coding-agent session drive"
   homepage "https://github.com/emergent-inc/ocean"
   version "0.2.23"
@@ -13,7 +13,7 @@ class Mosaic < Formula
     end
   end
 
-  conflicts_with "ocean", because: "both formulae install the same compatibility commands"
+  conflicts_with "mosaic", because: "both formulae install the same compatibility commands"
 
   def install
     libexec.install "ocean", "orgtrace", "rclone", "Ocean.app"
@@ -25,8 +25,8 @@ class Mosaic < Formula
   end
 
   test do
-    assert_match "Mosaic", shell_output("#{bin}/mosaic --help")
     assert_match "Ocean", shell_output("#{bin}/ocean --version")
+    assert_match "Mosaic", shell_output("#{bin}/mosaic --help")
     assert_predicate libexec/"Ocean.app/Contents/MacOS/OceanBackground", :executable?
     assert_match "com.ocean.app", (libexec/"Ocean.app/Contents/Info.plist").read
   end

@@ -8,6 +8,12 @@ Install Mosaic with:
 brew install emergent-inc/tap/mosaic
 ```
 
-Existing Ocean installations continue to upgrade through the `ocean` to
-`mosaic` formula rename, and the `ocean` command remains available for
-compatibility.
+Existing Ocean installations can upgrade in place during the compatibility
+window:
+
+```bash
+brew upgrade emergent-inc/tap/ocean
+```
+
+Both formulae install the `mosaic` and `ocean` commands from the same signed
+release. Install only one of them.
