@@ -6,10 +6,10 @@ class Mosaic < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/emergent-inc/homebrew-tap/releases/download/v0.2.24/ocean-darwin-arm64.tar.gz"
-      sha256 "50094b8822fda0ca390efe5da9a6dfdc3371c572ccc503eed3fe96885b147fe3"
+      sha256 "be8a7b3e5371dee03a5a1b09b1c260d0a47dd2b0b1d22586476fce5ab7df7dc0"
     else
       url "https://github.com/emergent-inc/homebrew-tap/releases/download/v0.2.24/ocean-darwin-x64.tar.gz"
-      sha256 "a9da10fb092bf5c5a1df06c1600d2f7548904a2ab0ea000215760e231a716508"
+      sha256 "93b5a1fb321592c4d4dff5a7cc25071b2b91ca302fbb1e3719621b8031e40998"
     end
   end
 
