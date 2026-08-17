@@ -6,10 +6,10 @@ class Ocean < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/emergent-inc/homebrew-tap/releases/download/v0.2.24/ocean-darwin-arm64.tar.gz"
-      sha256 "8d10e02d77c777ff1b87ec3796405d9b2ad6a75ce4e251a279efb975d9e7cd38"
+      sha256 "60ae20c3e8e8c7e52ebfe994f734d255390e9d358e6735406e7a1203b9166daa"
     else
       url "https://github.com/emergent-inc/homebrew-tap/releases/download/v0.2.24/ocean-darwin-x64.tar.gz"
-      sha256 "ce54d44ab501a9aa510d4189f350577c123c467501959d52aea6dd9594a2602e"
+      sha256 "d260d4e55874db41b4760200c2f4556f01bfcfd8fdefa863307f40ad37ad7441"
     end
   end
 
