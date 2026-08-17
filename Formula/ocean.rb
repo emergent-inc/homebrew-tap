@@ -13,8 +13,6 @@ class Ocean < Formula
     end
   end
 
-  conflicts_with "mosaic", because: "both formulae install the same compatibility commands"
-
   def install
     libexec.install "ocean", "orgtrace", "rclone", "Ocean.app"
     libexec.install "node", "ocean.mjs" if File.exist?("node")
